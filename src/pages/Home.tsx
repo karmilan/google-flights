@@ -1,5 +1,11 @@
+import { Paper } from "@mui/material";
+
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <Paper>jjjj</Paper>
+    </div>
+  );
 };
 
 export default Home;
