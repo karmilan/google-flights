@@ -16,5 +16,9 @@ export default function ThemeToggle() {
 
   const { darkMode, toggleTheme } = context;
 
-  return <Switch checked={darkMode} onChange={toggleTheme} />;
+  return (
+    <>
+      <Switch checked={darkMode} onChange={toggleTheme} />
+    </>
+  );
 }
