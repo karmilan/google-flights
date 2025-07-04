@@ -17,6 +17,9 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   const appTheme = createTheme({
     palette: {
       mode: darkMode ? "dark" : "light",
+      // primary: {
+      //   main: "#ff5252",
+      // },
     },
   });
   return (

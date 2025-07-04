@@ -1,9 +1,11 @@
-import { Paper } from "@mui/material";
+import ExploreDestinationsSection from "../components/ExploreDestinationsSection";
+import HeroSection from "../components/HeroSection";
 
 const Home = () => {
   return (
     <div>
-      <Paper>jjjj</Paper>
+      <HeroSection />
+      <ExploreDestinationsSection />
     </div>
   );
 };

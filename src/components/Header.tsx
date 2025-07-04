@@ -2,15 +2,15 @@ import AdbIcon from "@mui/icons-material/Adb";
 import MenuIcon from "@mui/icons-material/Menu";
 import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Tooltip from "@mui/material/Tooltip";
 import { useState } from "react";
 import ThemeToggle from "./ThemeToggle";
+import OutlinedButton from "./common/OutlinedButton";
 
-const pages = ["Products", "Pricing", "Blog"];
+const pages = ["Travel", "Explore", "Flights", "Hotels", "Holiday rentals"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Header = () => {
@@ -34,7 +34,7 @@ const Header = () => {
 
   return (
     <>
-      <AppBar position="static">
+      <AppBar position="static" color="default" elevation={1}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
@@ -111,13 +111,13 @@ const Header = () => {
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               {pages.map((page) => (
-                <Button
+                <OutlinedButton
                   key={page}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "white", display: "block" }}
+                  sx={{ mx: 1 }}
                 >
                   {page}
-                </Button>
+                </OutlinedButton>
               ))}
             </Box>
             <Box sx={{ flexGrow: 0 }}>
